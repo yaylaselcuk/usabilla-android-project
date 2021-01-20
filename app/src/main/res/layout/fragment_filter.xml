@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_30"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.7">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/detail_activity_root_padding"
+                android:paddingEnd="@dimen/detail_activity_root_padding"
+                android:paddingTop="@dimen/detail_activity_root_padding"
+                android:paddingBottom="@dimen/filter_scroll_bottom_padding"
+                >
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvStatusTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/detail_activity_section_margin"
+                    android:text="@string/status_title"
+                    android:textAppearance="@style/TextAppearance.Usabilla.Headline2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spinner_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvStatusTitle" />
+
+                <View
+                    android:id="@+id/divider1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/detail_activity_divider_height"
+                    android:layout_marginTop="@dimen/detail_activity_section_margin"
+                    android:background="@color/divider_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spStatus" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvTypeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/detail_activity_section_margin"
+                    android:text="@string/feedback_type_title"
+                    android:textAppearance="@style/TextAppearance.Usabilla.Headline2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider1" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spFeedbackType"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spinner_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTypeTitle" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/detail_activity_divider_height"
+                    android:layout_marginTop="@dimen/detail_activity_section_margin"
+                    android:background="@color/divider_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spFeedbackType" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvPlatformTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/detail_activity_section_margin"
+                    android:text="@string/platform_title"
+                    android:textAppearance="@style/TextAppearance.Usabilla.Headline2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spPlatform"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spinner_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvPlatformTitle" />
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/detail_activity_divider_height"
+                    android:layout_marginTop="@dimen/detail_activity_section_margin"
+                    android:background="@color/divider_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/spPlatform"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvBrowserTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/detail_activity_section_margin"
+                    android:text="@string/browser_title"
+                    android:textAppearance="@style/TextAppearance.Usabilla.Headline2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spBrowser"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spinner_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvBrowserTitle" />
+
+                <View
+                    android:id="@+id/divider4"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/detail_activity_divider_height"
+                    android:layout_marginTop="@dimen/detail_activity_section_margin"
+                    android:background="@color/divider_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spBrowser" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvBrowserVersionTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/detail_activity_section_margin"
+                    android:text="@string/browser_version_title"
+                    android:textAppearance="@style/TextAppearance.Usabilla.Headline2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spBrowserVersion"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spinner_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvBrowserVersionTitle" />
+
+                <View
+                    android:id="@+id/divider5"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/detail_activity_divider_height"
+                    android:layout_marginTop="@dimen/detail_activity_section_margin"
+                    android:background="@color/divider_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spBrowserVersion" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvRatingTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/detail_activity_section_margin"
+                    android:text="@string/rating_title"
+                    android:textAppearance="@style/TextAppearance.Usabilla.Headline2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spRating"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spinner_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvRatingTitle" />
+                <View
+                    android:id="@+id/divider6"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/detail_activity_divider_height"
+                    android:layout_marginTop="@dimen/detail_activity_section_margin"
+                    android:background="@color/divider_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spRating" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvStarredTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/detail_activity_section_margin"
+                    android:text="@string/starred_title"
+                    android:textAppearance="@style/TextAppearance.Usabilla.Headline2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider6" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spStarred"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spinner_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvStarredTitle" />
+
+                <View
+                    android:id="@+id/divider7"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/detail_activity_divider_height"
+                    android:layout_marginTop="@dimen/detail_activity_section_margin"
+                    android:background="@color/divider_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spStarred" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvPerformanceTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/detail_activity_section_margin"
+                    android:text="@string/performance_title"
+                    android:textAppearance="@style/TextAppearance.Usabilla.Headline2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider7" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spPerformance"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spinner_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvPerformanceTitle" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFilter"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/general_button_height"
+            android:text="@string/apply_filter_text"
+            android:textAllCaps="false"
+            android:layout_margin="@dimen/detail_activity_root_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

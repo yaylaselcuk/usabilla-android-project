@@ -1,0 +1,46 @@
+<resources>
+  <string name="google_maps_key">AIzaSyCZ24Ylb68A_nX9OX2pvD-v0sYljTn9L04</string>
+
+
+  <string name="app_name">Usabilla</string>
+  <string name="filter_title">Filter</string>
+  <string name="sort_title">Sort</string>
+  <string name="retrieve_data_error">Cannot get the data.\nReason is: %1$s\n You can pull to refresh to try again.</string>
+
+  <string name="platform_title">Platform</string>
+  <string name="browser_title">Browser</string>
+  <string name="browser_version">Version</string>
+  <string name="ip_address_title">IP Address</string>
+  <string name="performance_title">Performance</string>
+  <string name="labels_title">Labels</string>
+  <string name="suggestion_title">Suggestion</string>
+  <string name="question_title">Question</string>
+  <string name="bug_title">Bug</string>
+  <string name="compliment_title">Compliment</string>
+
+  <string name="detail_title">%1$s Detail</string>
+  <string name="detail_title_plain">Feedback Detail</string>
+  <string name="detailed_information_title">Detailed Information</string>
+  <string name="location_information_title">Location Information</string>
+  <string name="status_title">Status</string>
+  <string name="feedback_type_title">Feedback Type</string>
+  <string name="browser_version_title">Browser Version</string>
+  <string name="starred_title">Starred</string>
+  <string name="all_title">All</string>
+  <string name="new_title">New</string>
+  <string name="read_title">Read</string>
+  <string name="yes_title">Yes</string>
+  <string name="no_title">No</string>
+  <string name="general_error_text">An error occurred!</string>
+  <string name="apply_filter_text">Apply Filter</string>
+  <string name="rating_title">Rating</string>
+  <string name="clear_title">Clear Filter</string>
+  <string name="sort_screen_title">Sort Items By:</string>
+  <string name="time_new_to_old_title">New To Old</string>
+  <string name="time_old_to_new_title">Old To New</string>
+  <string name="rating_increasing_title">Rating Increasing</string>
+  <string name="rating_decreasing_title">Rating Decreasing</string>
+  <string name="performance_increasing_title">Performance Increasing</string>
+  <string name="performance_decreasing_title">Performance Decreasing</string>
+
+</resources>

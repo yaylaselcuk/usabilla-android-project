@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item android:id="@+id/sort"
+        android:icon="@drawable/ic_sort"
+        android:title="@string/sort_title"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/filter"
+        android:icon="@drawable/ic_filter"
+        android:title="@string/filter_title"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/clear_filter"
+        android:title="@string/clear_title"
+        android:visible="false"
+        app:showAsAction="withText"/>
+</menu>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/feedback_item_padding"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivFeedback"
+        android:layout_width="@dimen/feedback_list_image_width"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        tools:src="@drawable/ic_filter"
+        tools:tint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyleSmall"
+        android:numStars="5"
+        android:stepSize="1"
+        android:rating="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.Usabilla.Caption3"
+        tools:text="This is a great website"
+        android:lines="3"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:paddingLeft="@dimen/feedback_item_browser_info_padding"
+        android:paddingRight="@dimen/feedback_item_browser_info_padding"
+        app:layout_constraintStart_toEndOf="@+id/ivFeedback"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ratingBar"
+        app:layout_constraintBottom_toTopOf="@+id/tvDate"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.Usabilla.Caption2"
+        tools:text="12.12.2009 14:55"
+        android:paddingStart="@dimen/feedback_item_browser_info_padding"
+        android:paddingEnd="@dimen/feedback_item_browser_info_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvComment"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        tools:src="@drawable/ic_bug"
+        android:layout_marginTop="@dimen/feedback_item_type_margin"
+        android:layout_marginBottom="@dimen/feedback_item_type_margin"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabels"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ratingBar"
+        app:flow_verticalBias="1.0"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvLabels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.Usabilla.Caption1"
+        tools:text="compliment, bug"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

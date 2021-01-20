@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+  <!--Final, top-level theme-->
+  <style name="Theme.Usabilla.DayNight" parent="Theme.Usabilla"/>
+  <style name="Theme.Usabilla.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar"/>
+
+  <style name="Theme.Usabilla" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/purple_500</item>
+    <item name="colorPrimaryVariant">@color/purple_700</item>
+    <item name="colorOnPrimary">@color/white</item>
+    <!-- Secondary brand color. -->
+    <item name="colorSecondary">@color/teal_200</item>
+    <item name="colorSecondaryVariant">@color/teal_700</item>
+    <item name="colorOnSecondary">@color/black</item>
+    <!-- Status bar color. -->
+    <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    <!-- Customize your theme here. -->
+
+<!--    <item name="toolbarStyle">@style/CustomToolBarStyle</item>-->
+
+
+  </style>
+
+  <style name="CustomToolBarStyle" parent="@style/Widget.MaterialComponents.Toolbar">
+    <item name="titleTextColor">@color/white</item>
+  </style>
+</resources>

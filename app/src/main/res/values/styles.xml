@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--Text Styles-->
+    <style name="TextAppearance.Usabilla.Headline1" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textSize">@dimen/font_huge</item>
+        <item name="android:textColor">@color/usabilla_color</item>
+        <item name="fontFamily">@font/lato_black</item>
+    </style>
+
+    <style name="TextAppearance.Usabilla.Headline2" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="fontFamily">@font/lato_black</item>
+    </style>
+
+    <style name="TextAppearance.Usabilla.Headline3" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">@dimen/font_larger</item>
+        <item name="fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="TextAppearance.Usabilla.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="TextAppearance.Usabilla.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="TextAppearance.Usabilla.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="TextAppearance.Usabilla.Caption1" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="TextAppearance.Usabilla.Caption2" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="TextAppearance.Usabilla.Caption3" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/lato_italic</item>
+    </style>
+
+    <style name="TextAppearance.Usabilla.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/lato_black</item>
+        <item name="android:fontFamily">@font/lato_black</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.03</item>
+    </style>
+
+    <color name="usabilla_color">#0F4359</color>
+</resources>

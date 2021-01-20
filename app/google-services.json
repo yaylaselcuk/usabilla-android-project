@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "412960951406",
+    "project_id": "usabilla-b396e",
+    "storage_bucket": "usabilla-b396e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412960951406:android:54124f73df0804a9d46a7f",
+        "android_client_info": {
+          "package_name": "com.yaylas.usabilla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "412960951406-9d2s223cglssms9hhdv2uuj9jl8p8lhp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGikbtPLUfXGqy4CoSCt3AVfhRPIZ_APo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "412960951406-9d2s223cglssms9hhdv2uuj9jl8p8lhp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

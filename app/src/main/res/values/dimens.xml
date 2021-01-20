@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!--
+  Copyright (c) 2019 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
+  in compliance with the License. You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software distributed under the License
+  is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+  or implied. See the License for the specific language governing permissions and limitations under
+  the License.
+  -->
+<resources>
+
+    <!--  List activity  -->
+    <dimen name="error_label_top_margin">48dp</dimen>
+    <dimen name="error_label_horizontal_margin">12dp</dimen>
+
+    <!--  General  -->
+    <dimen name="font_tiny">9sp</dimen>
+    <dimen name="font_smaller">11sp</dimen>
+    <dimen name="font_smallest">10sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_normal">14sp</dimen>
+    <dimen name="font_large">16sp</dimen>
+    <dimen name="font_larger">18sp</dimen>
+    <dimen name="font_largest">20sp</dimen>
+    <dimen name="font_huge">24sp</dimen>
+
+    <!-- Feedback List Item   -->
+    <dimen name="feedback_list_image_width">80dp</dimen>
+    <dimen name="feedback_item_padding">8dp</dimen>
+    <dimen name="feedback_item_browser_info_padding">8dp</dimen>
+    <dimen name="feedback_item_type_margin">6dp</dimen>
+
+
+    <!--  Detail activity  -->
+    <dimen name="detail_activity_root_padding">12dp</dimen>
+    <dimen name="detail_activity_divider_height">0.5dp</dimen>
+    <dimen name="detail_activity_vertical_margin">4dp</dimen>
+    <dimen name="detail_activity_section_margin">12dp</dimen>
+    <dimen name="detail_activity_map_height">200dp</dimen>
+
+    <!--  Detail Item  -->
+    <dimen name="detail_item_padding">6dp</dimen>
+    <dimen name="spinner_height">40dp</dimen>
+    <dimen name="spinner_item_height">45dp</dimen>
+    <dimen name="general_button_height">55dp</dimen>
+    <dimen name="filter_scroll_bottom_padding">64dp</dimen>
+
+    <!--  Sort Item  -->
+    <dimen name="sort_item_padding">8dp</dimen>
+    <dimen name="splash_title_margin">24dp</dimen>
+    <dimen name="splash_image_margin">12dp</dimen>
+
+</resources>
