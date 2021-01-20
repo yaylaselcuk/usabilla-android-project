@@ -77,7 +77,7 @@ object QueryCreator {
             is SortType.TimeNewToOld -> " order by created_time desc"
             is SortType.TimeOldToNew -> " order by created_time asc"
             is SortType.RatingDecreasing -> " order by rating desc"
-            is SortType.RatingIncreasing -> " order by rating desc"
+            is SortType.RatingIncreasing -> " order by rating asc"
         }
     }
 

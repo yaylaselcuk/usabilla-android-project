@@ -44,6 +44,7 @@
         android:ellipsize="end"
         android:paddingLeft="@dimen/feedback_item_browser_info_padding"
         android:paddingRight="@dimen/feedback_item_browser_info_padding"
+        android:gravity="start|center_vertical"
         app:layout_constraintStart_toEndOf="@+id/ivFeedback"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/ratingBar"

@@ -1,5 +1,6 @@
 package com.yaylas.usabilla.di
 
+import android.location.Geocoder
 import android.util.Log
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -77,9 +78,10 @@ object NetworkModule {
     @Provides
     fun provideNetworkDataSource(
         feedbackRetrofitService: FeedbackRetrofitService,
-        networkMapper: NetworkMapper
+        networkMapper: NetworkMapper,
+        geocoder: Geocoder
     ): NetworkDataSource {
-        return NetworkDataSourceImpl(feedbackRetrofitService, networkMapper)
+        return NetworkDataSourceImpl(feedbackRetrofitService, networkMapper, geocoder)
     }
 
 }
